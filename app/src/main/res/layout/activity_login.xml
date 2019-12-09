@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView_Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/a_login"
+        android:textColor="@color/colorLogin"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView_Login_Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/a_login_Username"
+        android:textColor="@color/colorLoginScreen"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editText_Login_Username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:textSize="13sp"
+        android:background="@android:color/transparent"/>
+
+    <TextView
+        android:id="@+id/textView_Login_Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/a_login_Password"
+        android:textColor="@color/colorLoginScreen"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/editText_Login_Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:textSize="13sp"
+        android:background="@android:color/transparent"/>
+
+    <Button
+        android:id="@+id/buttonSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:text="@string/a_login_Button"
+        android:textColor="@color/colorLoginScreen"
+        android:textSize="20sp"
+        android:onClick="buttonSignInClick">
+    </Button>
+
+    <LinearLayout
+        android:id="@+id/sign_up_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/login_not_registered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/login_not_registered"
+            android:textColor="@color/colorLogin"
+            android:textSize="20sp"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/login_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/login_sign_up"
+            android:textColor="@color/colorLogin"
+            android:textSize="20sp"
+            android:clickable="true"
+            android:onClick="processSignUpLinkClick"
+            >
+        </TextView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

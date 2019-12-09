@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectLoginActivity"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_login_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login_company"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="20dp"
+            style="@style/TextAppearance.AppCompat.Widget.Button"
+            android:background="@color/colorPrimary"
+            android:onClick="buttonSelectCompanyClick">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btn_login_employee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login_employee"
+            android:textColor="#ffffff"
+            style="@style/TextAppearance.AppCompat.Widget.Button"
+            android:background="@color/colorPrimary"
+            android:onClick="buttonSelectEmployeeClick">
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>
