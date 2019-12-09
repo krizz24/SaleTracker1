@@ -13,14 +13,17 @@
         android:text="@string/a_login"
         android:textColor="@color/colorLogin"
         android:textSize="30sp" />
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     <TextView
         android:id="@+id/textView_Login_Username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/a_login_Username"
         android:textColor="@color/colorLoginScreen"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:layout_marginLeft="5sp"/>
 
     <EditText
         android:id="@+id/editText_Login_Username"
@@ -29,13 +32,19 @@
         android:importantForAutofill="no"
         android:inputType="textEmailAddress"
         android:textSize="13sp"
+        android:layout_marginLeft="@dimen/row_padding_vertical"
         android:background="@android:color/transparent"/>
+    </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     <TextView
         android:id="@+id/textView_Login_Password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:layout_marginLeft="5sp"
         android:text="@string/a_login_Password"
         android:textColor="@color/colorLoginScreen"
         android:textSize="20sp"
@@ -45,10 +54,13 @@
         android:id="@+id/editText_Login_Password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:importantForAutofill="no"
         android:inputType="textPassword"
         android:textSize="13sp"
+        android:layout_marginLeft="@dimen/row_padding_vertical"
         android:background="@android:color/transparent"/>
+    </LinearLayout>
 
     <Button
         android:id="@+id/buttonSignIn"

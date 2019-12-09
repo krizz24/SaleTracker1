@@ -21,6 +21,7 @@
     <string name="sign_up_phone">Phone Number</string>
     <string name="sign_up_email">Email</string>
 
+    <string name="company_product">PRODUCTS</string>
     <string name="company_employee">EMPLOYEE</string>
 
     <string name="employee_attendance">ATTENDANCE</string>

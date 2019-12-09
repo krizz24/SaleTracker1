@@ -13,19 +13,33 @@
         android:orientation="vertical"
         android:gravity="center">
 
+
+
         <Button
-            android:id="@+id/btn_attendance"
+            android:id="@+id/btn_company_product"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/employee_attendance"
+            android:text="@string/employee_product"
             android:textColor="#ffffff"
             android:layout_marginBottom="20dp"
+            style="@style/TextAppearance.AppCompat.Widget.Button"
+            android:background="@color/colorPrimary"
+            android:onClick="buttonCompanyProductClick">
+        </Button>
+
+        <Button
+            android:id="@+id/btn_company_employee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/company_employee"
+            android:layout_marginBottom="20dp"
+            android:textColor="#ffffff"
             style="@style/TextAppearance.AppCompat.Widget.Button"
             android:background="@color/colorPrimary">
         </Button>
 
         <Button
-            android:id="@+id/btn_product"
+            android:id="@+id/btn_employee_product"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/employee_product"
@@ -36,13 +50,14 @@
         </Button>
 
         <Button
-            android:id="@+id/btn_employee"
+            android:id="@+id/btn_employee_attendance"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/company_employee"
+            android:text="@string/employee_attendance"
             android:textColor="#ffffff"
             style="@style/TextAppearance.AppCompat.Widget.Button"
-            android:background="@color/colorPrimary">
+            android:background="@color/colorPrimary"
+            android:onClick="buttonEmployeeAttendanceClick">
         </Button>
 
     </LinearLayout>

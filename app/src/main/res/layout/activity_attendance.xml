@@ -12,7 +12,16 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:gravity="center"
-        android:text="@string/employee_attendance"></TextView>
+        android:text="@string/employee_attendance">
+
+    </TextView>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </ListView>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,7 +31,10 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/employee_check_in"></Button>
+            android:text="@string/employee_check_in"
+            android:onClick="processCheckInClick">
+
+        </Button>
 
     </LinearLayout>
 </LinearLayout>
