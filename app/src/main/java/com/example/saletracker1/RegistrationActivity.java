@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -67,21 +68,23 @@ public class RegistrationActivity extends AppCompatActivity {
                 registerResponse.enqueue(new Callback<RegisterResponse>() {
                     @Override
                     public void onResponse(Call<RegisterResponse> call, Response<RegisterResponse> response) {
-
+                        Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+                        intent.putExtra(SelectLoginActivity.SELECT_TYPE_KEY, loginType);
+                        startActivity(intent);
                     }
 
                     @Override
                     public void onFailure(Call<RegisterResponse> call, Throwable t) {
-
+                        Toast
+                                .makeText(getApplicationContext(), "Connection Failed!",
+                                        Toast.LENGTH_SHORT).show();
                     }
                 });
 
 
 
 
-                Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
-                intent.putExtra(SelectLoginActivity.SELECT_TYPE_KEY, loginType);
-                startActivity(intent);
+
             }
         });
 

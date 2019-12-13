@@ -1,4 +1,4 @@
-package com.example.saletracker1.recyclerview;
+package com.example.saletracker1.products;
 
 import android.content.Context;
 import android.view.LayoutInflater;

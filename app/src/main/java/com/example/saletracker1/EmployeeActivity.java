@@ -7,8 +7,6 @@ import android.widget.ListView;
 
 import com.example.saletracker1.employee.Employee;
 import com.example.saletracker1.employee.EmployeeAdapter;
-import com.example.saletracker1.recyclerview.ProductAdapter;
-import com.example.saletracker1.recyclerview.Products;
 
 import java.util.ArrayList;
 

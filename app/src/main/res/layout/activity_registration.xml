@@ -2,174 +2,217 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/login_background"
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/login_sign_up"
+        android:id="@+id/sign_up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="20dp"
         android:padding="10dp"
         android:text="@string/login_sign_up"
         android:textColor="@color/colorLogin"
-        android:textSize="20sp"></TextView>
+        android:textSize="30sp"
+        android:textStyle="bold"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp">
+        android:orientation="vertical"
+        android:layout_marginTop="30sp">
 
-        <TextView
-            android:id="@+id/text_view_sign_up_company_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5sp"
-            android:text="@string/sign_up_company_name"
-            android:textColor="@color/colorLoginScreen"
-            android:textSize="15sp" />
-
-        <EditText
-            android:id="@+id/edit_text_sign_up_company_name"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/row_padding_vertical"
-            android:autofillHints="@string/sign_up_company_name"
-            android:background="@android:color/transparent"
-            android:inputType="text"
-            android:textSize="15sp" />
-    </LinearLayout>
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp">
+            <TextView
+                android:id="@+id/text_view_sign_up_company_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="5sp"
+                android:text="@string/sign_up_company_name"
+                android:textColor="@color/colorLoginScreen"
+                android:textSize="15sp" />
 
-        <TextView
-            android:id="@+id/text_view_sign_up_owner_name"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="5sp"
-            android:text="@string/sign_up_owner_name"
-            android:textColor="@color/colorLoginScreen"
-            android:textSize="15sp" />
+            <EditText
+                android:id="@+id/edit_text_sign_up_company_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/row_padding_vertical"
+                android:autofillHints="@string/sign_up_company_name"
+                android:inputType="text"
+                android:textSize="15sp"
+                android:background="#9AA6F3"
+                android:textColor="@color/white"/>
+        </LinearLayout>
 
-        <EditText
-            android:id="@+id/edit_text_sign_up_owner_name"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/row_padding_vertical"
-            android:autofillHints="@string/sign_up_owner_name"
-            android:background="@android:color/transparent"
-            android:inputType="text"
-            android:textSize="15sp" />
-    </LinearLayout>
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp">
+            <TextView
+                android:id="@+id/text_view_sign_up_owner_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="5sp"
+                android:text="@string/sign_up_owner_name"
+                android:textColor="@color/colorLoginScreen"
+                android:textSize="15sp" />
 
-        <TextView
-            android:id="@+id/text_view_sign_up_address"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5sp"
-            android:text="@string/sign_up_address"
-            android:textColor="@color/colorLoginScreen"
-            android:textSize="15sp" />
+            <EditText
+                android:id="@+id/edit_text_sign_up_owner_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/row_padding_vertical"
+                android:autofillHints="@string/sign_up_owner_name"
+                android:background="#9AA6F3"
+                android:textColor="@color/white"
+                android:inputType="text"
+                android:textSize="15sp" />
+        </LinearLayout>
 
-        <EditText
-            android:id="@+id/edit_text_sign_up_address"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/row_padding_vertical"
-            android:autofillHints="@string/sign_up_address"
-            android:background="@android:color/transparent"
-            android:inputType="text"
-            android:textSize="15sp" />
-    </LinearLayout>
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp">
+            <TextView
+                android:id="@+id/text_view_sign_up_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="5sp"
+                android:text="@string/sign_up_address"
+                android:textColor="@color/colorLoginScreen"
+                android:textSize="15sp" />
 
-        <TextView
-            android:id="@+id/text_view_sign_up_phone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5sp"
-            android:text="@string/sign_up_phone"
-            android:textColor="@color/colorLoginScreen"
-            android:textSize="15sp" />
+            <EditText
+                android:id="@+id/edit_text_sign_up_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/row_padding_vertical"
+                android:autofillHints="@string/sign_up_address"
+                android:background="#9AA6F3"
+                android:textColor="@color/white"
+                android:inputType="text"
+                android:textSize="15sp" />
+        </LinearLayout>
 
-        <EditText
-            android:id="@+id/edit_text_sign_up_phone"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/row_padding_vertical"
-            android:autofillHints="@string/sign_up_phone"
-            android:background="@android:color/transparent"
-            android:inputType="phone"
-            android:textSize="15sp" />
-    </LinearLayout>
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp">
+            <TextView
+                android:id="@+id/text_view_sign_up_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="5sp"
+                android:text="@string/sign_up_phone"
+                android:textColor="@color/colorLoginScreen"
+                android:textSize="15sp" />
 
-        <TextView
-            android:id="@+id/text_view_sign_up_email"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5sp"
-            android:text="@string/sign_up_email"
-            android:textColor="@color/colorLoginScreen"
-            android:textSize="15sp" />
+            <EditText
+                android:id="@+id/edit_text_sign_up_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/row_padding_vertical"
+                android:autofillHints="@string/sign_up_phone"
+                android:background="#9AA6F3"
+                android:textColor="@color/white"
+                android:inputType="phone"
+                android:textSize="15sp" />
+        </LinearLayout>
 
-        <EditText
-            android:id="@+id/edit_text_sign_up_email"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/row_padding_vertical"
-            android:autofillHints="@string/sign_up_email"
-            android:background="@android:color/transparent"
-            android:inputType="textEmailAddress"
-            android:textSize="15sp" />
-    </LinearLayout>
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp">
+            <TextView
+                android:id="@+id/text_view_sign_up_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="5sp"
+                android:text="@string/sign_up_email"
+                android:textColor="@color/colorLoginScreen"
+                android:textSize="15sp" />
 
-        <TextView
-            android:id="@+id/text_view_sign_up_password"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="5sp"
-            android:text="@string/sign_up_password"
-            android:textColor="@color/colorLoginScreen"
-            android:textSize="15sp" />
+            <EditText
+                android:id="@+id/edit_text_sign_up_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/row_padding_vertical"
+                android:autofillHints="@string/sign_up_email"
+                android:background="#9AA6F3"
+                android:textColor="@color/white"
+                android:inputType="textEmailAddress"
+                android:textSize="15sp" />
+        </LinearLayout>
 
-        <EditText
-            android:id="@+id/edit_text_sign_up_password"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/row_padding_vertical"
-            android:autofillHints="@string/sign_up_email"
-            android:background="@android:color/transparent"
-            android:textSize="15sp" />
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginEnd="20dp">
+
+            <TextView
+                android:id="@+id/text_view_sign_up_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_marginStart="5sp"
+                android:text="@string/sign_up_password"
+                android:textColor="@color/colorLoginScreen"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/edit_text_sign_up_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/row_padding_vertical"
+                android:autofillHints="@string/sign_up_email"
+                android:background="#9AA6F3"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/signUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="buttonSignUpClick"
+            android:textColor="@color/colorLoginScreen"
+            android:text="@string/btn_sign_up"
+            android:textSize="25sp"/>
+
     </LinearLayout>
-
-
-    <Button
-        android:id="@+id/signUp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="buttonSignUpClick"
-        android:text="@string/login_sign_up"></Button>
-
 </LinearLayout>

@@ -2,23 +2,13 @@ package com.example.saletracker1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.location.Location;
-import android.location.LocationListener;
-import android.location.LocationManager;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.example.saletracker1.attendance.Attendance;
 import com.example.saletracker1.attendance.AttendanceAdapter;
-import com.example.saletracker1.recyclerview.ProductAdapter;
-import com.example.saletracker1.recyclerview.Products;
 
 import java.util.ArrayList;
 

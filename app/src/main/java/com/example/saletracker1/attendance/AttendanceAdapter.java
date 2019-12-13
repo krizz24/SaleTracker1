@@ -10,8 +10,6 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import com.example.saletracker1.R;
-import com.example.saletracker1.recyclerview.ProductAdapter;
-import com.example.saletracker1.recyclerview.Products;
 
 import java.util.ArrayList;
 

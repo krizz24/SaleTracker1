@@ -5,8 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
 
-import com.example.saletracker1.recyclerview.ProductAdapter;
-import com.example.saletracker1.recyclerview.Products;
+import com.example.saletracker1.products.ProductAdapter;
+import com.example.saletracker1.products.Products;
 
 import java.util.ArrayList;
 

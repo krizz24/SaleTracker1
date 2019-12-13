@@ -13,8 +13,9 @@
     <string name="login_employee">Employee</string>
 
     <string name="login_not_registered">Not Yet Registered?</string>
-    <string name="login_sign_up">SignUp</string>
+    <string name="login_sign_up">Sign Up</string>
 
+    <string name="btn_sign_up">SIGN UP</string>
     <string name="sign_up_company_name">Company Name</string>
     <string name="sign_up_owner_name">Owner Name</string>
     <string name="sign_up_address">Address</string>
@@ -31,12 +32,15 @@
     <string name="employee_previous_attendance">Previous Attendance</string>
 
     <string name="employee_check_in">CHECK IN</string>
+    <string name="add_employee">ADD EMPLOYEE</string>
 
     <string name="product_id">ID</string>
     <string name="product_name">Name</string>
     <string name="product_rate">Rate</string>
     <string name="product_quantity">Quantity</string>
     <string name="product_manufacturer">Manufacturer</string>
+
+    <string name="add_product">Add Product</string>
 
 
 </resources>

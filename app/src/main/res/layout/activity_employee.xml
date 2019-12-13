@@ -5,11 +5,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:context=".EmployeeActivity">
 
         <TextView
             android:layout_width="match_parent"
@@ -28,6 +23,22 @@
             android:background="@android:color/transparent"
             android:divider="#f55">
         </ListView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/btn_add_employee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_employee"
+            android:clickable="true"
+            android:onClick="processAddEmployeeClick">
+
+        </Button>
 
     </LinearLayout>
 
