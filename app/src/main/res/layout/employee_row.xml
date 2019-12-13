@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingTop="2.5dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="2.5dp">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/layout_employee_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="7dip"
+            android:padding="2dip">
+
+            <TextView
+                android:id="@+id/employee_id"
+                android:layout_width="54dp"
+                android:layout_height="50dip"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="25"
+                android:textColor="#040404"
+                android:textSize="30dip"
+                android:textStyle="bold"
+                android:typeface="sans"
+
+                />
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout_employee_name"
+    android:layout_marginStart="5dp"
+    >
+        <TextView
+            android:id="@+id/employee_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="50dip"
+            android:layout_weight="1"
+            android:text="Krishna Priya"
+            android:textColor="#040404"
+            android:textSize="15dip"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/employee_dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="10/05/1985"
+            android:textColor="#1d1d1d"
+            android:textSize="12dip"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/employee_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Female"
+            android:textColor="#1d1d1d"
+            android:textSize="12dip"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/employee_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="viewEnd"
+            android:text="9874563210"
+            android:textColor="#1d1d1d"
+            android:textSize="12dip"
+            android:textStyle="bold" />
+</LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_employee_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_employee_name"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:layout_marginStart="5dp">
+
+            <TextView
+                android:id="@+id/employee_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginLeft="50dip"
+                android:paddingRight="5dip"
+                android:text="blahblahblah@gmail.com"
+                android:textColor="#1d1d1d"
+                android:textSize="12dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

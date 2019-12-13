@@ -2,14 +2,14 @@ package com.example.saletracker1.recyclerview;
 
 public class Products {
 
-    protected int id;
+    private int id;
     private String productName;
     private long rate;
     private int quantity;
     private String manufacturer;
 
 
-    public void Products(int id, String productName,
+    public Products(int id, String productName,
                          long rate, int quantity,
                          String manufacturer ){
         this.id = id;
@@ -36,9 +36,7 @@ public class Products {
     }
 
 
-    public void setId(int id) {
-        this.id = id;
-    }
+    public void setId(int id) { this.id = id; }
     public void setProductName(String productName) {
         this.productName = productName;
     }

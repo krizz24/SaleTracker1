@@ -15,23 +15,35 @@
         android:text="@string/employee_attendance">
 
     </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="@string/employee_previous_attendance"
+        android:textStyle="bold"
+        android:textSize="10sp">
+    </TextView>
 
     <ListView
+        android:id="@+id/attendance_listview"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:divider="#f55">
     </ListView>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="bottom">
 
         <Button
+            android:id="@+id/btn_check_in"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/employee_check_in"
+            android:clickable="true"
             android:onClick="processCheckInClick">
 
         </Button>
