@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission. ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -12,7 +13,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EmployeeActivity"></activity>
+        <activity android:name=".CameraPreviewActivity"></activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".EmployeeActivity" />
         <activity
             android:name=".AttendanceActivity"
             android:parentActivityName=".HomeActivity" />
@@ -36,6 +43,14 @@
         <activity
             android:name=".RegistrationActivity"
             android:parentActivityName=".LoginActivity" />
+        <!--
+ Service to asynchronously fetch a location address using a Geocoder. Setting the
+        android:exported attribute to "false" stops other apps from starting this
+        service, even when using an explicit intent.
+        -->
+        <service
+            android:name=".attendance.FetchAddressIntentService"
+            android:exported="false" />
     </application>
 
 </manifest>

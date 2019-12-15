@@ -44,7 +44,7 @@
             android:layout_height="wrap_content"
             android:text="@string/employee_check_in"
             android:clickable="true"
-            android:onClick="processCheckInClick">
+            android:onClick="openCheckIn">
 
         </Button>
 

@@ -57,7 +57,7 @@ public class RegistrationActivity extends AppCompatActivity {
 
 
                 Retrofit retrofit = new  Retrofit.Builder()
-                        .baseUrl("")
+                        .baseUrl("http://backtowork.icfoss.qleapbs.com/saletracker")
                         .addConverterFactory(GsonConverterFactory.create())
                         .build();
 
