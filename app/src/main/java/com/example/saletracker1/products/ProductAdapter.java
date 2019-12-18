@@ -70,7 +70,7 @@ public class ProductAdapter extends ArrayAdapter<Products> implements View.OnCli
             viewHolder.productId = (TextView) convertView.findViewById(R.id.product_id);
             viewHolder.productName = (TextView) convertView.findViewById(R.id.product_name);
             viewHolder.productRate = (TextView) convertView.findViewById(R.id.product_rate);
-            viewHolder.productQuantity = (TextView) convertView.findViewById(R.id.product_quantity);
+            viewHolder.productQuantity = (TextView) convertView.findViewById(R.id.cart_product_quantity);
             viewHolder.productOwner = (TextView) convertView.findViewById(R.id.product_manufacturer);
 
             result=convertView;

@@ -3,6 +3,7 @@ package com.example.saletracker1;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import com.example.saletracker1.products.ProductAdapter;
@@ -48,5 +49,10 @@ public class ProductManageActivity extends AppCompatActivity {
         adapter= new ProductAdapter(products,getApplicationContext());
 
         listView.setAdapter(adapter);
+
+
+        ImageView plusButton=findViewById(R.id.cart_plus_img);
+        ImageView minusButton=findViewById(R.id.cart_minus_img);
+
     }
 }

@@ -32,19 +32,18 @@ public class RegistrationActivity extends AppCompatActivity {
         loginType = getIntent().getStringExtra(SelectLoginActivity.SELECT_TYPE_KEY);
 
 
-        final EditText eTCompanyName= findViewById(R.id.edit_text_sign_up_company_name);
-        final EditText eTOwnerName= findViewById(R.id.edit_text_sign_up_owner_name);
-        final EditText eTAddress= findViewById(R.id.edit_text_sign_up_address);
-        final EditText eTPhone= findViewById(R.id.edit_text_sign_up_phone);
-        final EditText eTEmail= findViewById(R.id.edit_text_sign_up_email);
-        final EditText eTPassword= findViewById(R.id.edit_text_sign_up_password);
+        final EditText eTCompanyName = findViewById(R.id.edit_text_sign_up_company_name);
+        final EditText eTOwnerName = findViewById(R.id.edit_text_sign_up_owner_name);
+        final EditText eTAddress = findViewById(R.id.edit_text_sign_up_address);
+        final EditText eTPhone = findViewById(R.id.edit_text_sign_up_phone);
+        final EditText eTEmail = findViewById(R.id.edit_text_sign_up_email);
+        final EditText eTPassword = findViewById(R.id.edit_text_sign_up_password);
 
-        Button buttonSignUp = findViewById(R.id.buttonSignIn);
+        Button buttonSignUp = findViewById(R.id.signUp);
 
         buttonSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 String sCompanyName = eTCompanyName.getText().toString();
                 String sOwnerName = eTOwnerName.getText().toString();
                 String sAddress = eTAddress.getText().toString();
@@ -52,12 +51,12 @@ public class RegistrationActivity extends AppCompatActivity {
                 String sEmail = eTEmail.getText().toString();
                 String sPassword = eTPassword.getText().toString();
 
-                RegisterRequest registerRequest= new RegisterRequest(sCompanyName,sOwnerName,
-                        sAddress,sPhone,sEmail,sPassword);
+                RegisterRequest registerRequest = new RegisterRequest(sCompanyName, sOwnerName,
+                        sAddress, sPhone, sEmail, sPassword);
 
 
-                Retrofit retrofit = new  Retrofit.Builder()
-                        .baseUrl("http://backtowork.icfoss.qleapbs.com/saletracker")
+                Retrofit retrofit = new Retrofit.Builder()
+                        .baseUrl("http://backtowork.icfoss.qleapbs.com/sale-tracker/")
                         .addConverterFactory(GsonConverterFactory.create())
                         .build();
 
@@ -76,20 +75,13 @@ public class RegistrationActivity extends AppCompatActivity {
                     @Override
                     public void onFailure(Call<RegisterResponse> call, Throwable t) {
                         Toast
-                                .makeText(getApplicationContext(), "Connection Failed!",
+                                .makeText(getApplicationContext(),
+                                        "Connection Failed!" + t.getMessage().toString(),
                                         Toast.LENGTH_SHORT).show();
                     }
                 });
-
-
-
-
-
             }
         });
-
-
-
     }
 
     public void buttonSignUpClick(View view) {

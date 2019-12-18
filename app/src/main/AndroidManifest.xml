@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission. ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -12,37 +13,47 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".CameraPreviewActivity"></activity>
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
 
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
 
-        <activity android:name=".EmployeeActivity" />
-        <activity
-            android:name=".AttendanceActivity"
-            android:parentActivityName=".HomeActivity" />
-        <activity android:name=".HomeActivity" />
-        <activity
-            android:name=".ProductManageActivity"
-            android:parentActivityName=".HomeActivity" />
-        <activity
-            android:name=".SelectLoginActivity"
-            android:label="@string/getting_started" />
         <activity
             android:name=".SplashActivity"
             android:theme="@style/AppThemeSplash">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
-
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity" />
+
         <activity
-            android:name=".RegistrationActivity"
-            android:parentActivityName=".LoginActivity" />
+            android:name=".SelectLoginActivity"
+            android:label="@string/getting_started"/>
+
+        <activity android:name=".LoginActivity" />
+
+        <activity
+            android:name=".RegistrationActivity"/>
+
+        <activity android:name=".HomeActivity" />
+
+        <activity
+            android:name=".ProductManageActivity"/>
+
+        <activity android:name=".EmployeeActivity"/>
+
+
+        <activity android:name=".EmployeeProductActivity"/>
+
+        <activity android:name=".CameraPreviewActivity" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".AttendanceActivity"/>
+
+
         <!--
  Service to asynchronously fetch a location address using a Geocoder. Setting the
         android:exported attribute to "false" stops other apps from starting this

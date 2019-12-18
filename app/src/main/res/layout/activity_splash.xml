@@ -8,6 +8,15 @@
     tools:context=".SplashActivity"
     android:gravity="center">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/ic_splash_round"
+        android:scaleType="fitCenter"
+        android:padding="100dp"
+        android:background="#FFFFFF"
+        />
+
     <TextView
         android:id="@+id/SplashScreen"
         android:layout_width="wrap_content"
@@ -16,6 +25,7 @@
         android:layout_gravity="center"
         android:textColor="@color/colorLoginScreen"
         android:textSize="20sp"
+        android:visibility="gone"
 
         />
 

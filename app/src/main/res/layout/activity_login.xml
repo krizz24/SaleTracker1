@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/login_background">
-
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
     <TextView
         android:id="@+id/textView_Login"
         android:layout_width="wrap_content"
@@ -34,9 +39,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/a_login_Username"
-        android:textColor="@color/colorLoginScreen"
+        android:textColor="@color/colorLogin"
         android:textSize="20sp"
-        android:layout_marginLeft="5sp"/>
+        android:layout_marginStart="5sp"/>
 
     <EditText
         android:id="@+id/editText_Login_Username"
@@ -48,8 +53,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginStart="50sp"
         android:layout_marginEnd="50sp"
-        android:background="#9AA6F3"
-        android:textColor="@color/white"/>
+        android:background="#ffffe0" />
     </LinearLayout>
 
     <LinearLayout
@@ -63,9 +67,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="5sp"
+        android:layout_marginStart="5sp"
         android:text="@string/a_login_Password"
-        android:textColor="@color/colorLoginScreen"
+        android:textColor="@color/colorLogin"
         android:textSize="20sp"
         />
 
@@ -79,8 +83,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginStart="50sp"
         android:layout_marginEnd="50sp"
-        android:background="#9AA6F3"
-        android:textColor="@color/white"/>
+        android:background="#ffffe0" />
     </LinearLayout>
 
     <Button
@@ -92,7 +95,7 @@
         android:padding="10dp"
         android:layout_gravity="center"
         android:text="@string/a_login_Button"
-        android:textColor="@color/colorLoginScreen"
+        android:textColor="@color/colorLogin"
         android:textSize="25sp"
         android:onClick="buttonSignInClick">
     </Button>
@@ -136,5 +139,6 @@
 
     </LinearLayout>
 
-
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

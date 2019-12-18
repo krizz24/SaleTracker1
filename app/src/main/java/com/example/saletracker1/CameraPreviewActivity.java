@@ -9,7 +9,6 @@ import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.location.Geocoder;
 import android.location.Location;
 import android.net.Uri;
@@ -18,7 +17,6 @@ import android.os.Handler;
 import android.os.ResultReceiver;
 import android.provider.MediaStore;
 import android.provider.Settings;
-import android.util.Base64;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -33,9 +31,6 @@ import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
-
-import java.io.ByteArrayInputStream;
-import java.io.InputStream;
 
 public class CameraPreviewActivity extends AppCompatActivity {
 
@@ -423,5 +418,10 @@ public class CameraPreviewActivity extends AppCompatActivity {
                         });
             }
         }
+    }
+    public void buttonSubmitClick(View view){
+        Intent intent = new Intent(this, EmployeeProductActivity.class);
+        startActivity(intent);
+
     }
 }

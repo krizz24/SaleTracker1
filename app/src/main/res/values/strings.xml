@@ -33,6 +33,9 @@
 
     <string name="employee_check_in">CHECK IN</string>
     <string name="add_employee">ADD EMPLOYEE</string>
+    <string name="check_in_submit">Submit</string>
+
+    <string name="employee_check_out">CHECK OUT</string>
 
     <string name="product_id">ID</string>
     <string name="product_name">Name</string>
